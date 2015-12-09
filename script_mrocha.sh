@@ -11,3 +11,4 @@ case $NUM in
 	2) cd /home/$USUARIO/Downloads && wget -c $LINK && rpm2txz *.rpm && upgradepkg --install-new *.t?z && rm *.rpm ;
 	*) dialog --msgbox 'Esta opção não é valida , tente novamente' 50 50 "!" ;;
 esac
+dialog --msgbox 'A instalação do aquivo foi realizada com exito , agora abra o terminal e digite o nome do arquivo para verifivar a falta de dependências , caso esteja tudo ok o programa irá abrir normalmente !' 50 50
